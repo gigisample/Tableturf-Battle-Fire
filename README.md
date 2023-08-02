@@ -6,7 +6,7 @@
 
 ナワバトラーの150枚以上のカードの中から15枚を選ぶデッキ構築は非常に難しく時間がかかります。しかし、相性が良いカードは必ず存在し、それを簡単に見つけるために本スクリプトを作成しました。
 
-相性が良いカードをSPマスを発火させ合うものと定義し、本スクリプトはそれを全列挙することを目指しました。得られた情報は強いデッキを組むための判断材料として使用します。
+相性が良いカードをSPマスを発火させ合うものと定義し、本スクリプトはそれを全列挙することを目指します。得られた情報は強いデッキを組むための判断材料として使用します。
 
 
 
@@ -15,14 +15,14 @@
 このリポジトリをクローンしてください。
 
 ```bash
-git clone https://gitlab.com/your-repo/tableturf-analysis.git
+git clone https://github.com/gigisample/Tableturf-Battle-Fire.git
 ```
 
 python3とjupyter-notebook, 必要なパッケージ(numpy, pandas, matplotlib, opencv等)がインストールされた端末の動作を想定しています。
 しかし、コンテナを使うことで環境構築をスキップできます。
 
 ```bash
-cd tableturf-analysis
+cd Tableturf-Battle-Fire
 docker build -t my-jupyter-notebook .
 docker run -p 8888:8888 -v "$PWD":/usr/src/app my-jupyter-notebook
 ```
@@ -45,7 +45,7 @@ http://127.0.0.1:8888
 
 カードの組み合わせパターン
 ```
-./data/output/combofire_append.csv
+./data/output/combolist.csv
 ```
 発火表
 ```
@@ -136,6 +136,7 @@ http://127.0.0.1:8888
 
 ![card3](./etc/0_0.jpg)
 
+![card4](./etc/0_1.jpg)
 
 ## Extra
 
